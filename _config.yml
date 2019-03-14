@@ -24,7 +24,7 @@ github_username:  gertjana
 
 # Build settings
 markdown: kramdown
-theme: victorvoid/space-jekyll-template
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
 

@@ -1,8 +1,9 @@
 ---
-title: Smartmeter Experiments part 1
-layout: post
-categories: [development]
-tags: [smartmeter, p1]
+title: 		Smartmeter Experiments part 1
+layout: 	post
+comments: 	true
+categories: development
+tags: 		smartmeter p1
 ---
 
 Disclaimer: This is all based on the Dutch P1 Standard, in other countries it will simply not work or at best your experiences may vary

@@ -5,7 +5,7 @@ categories: [development]
 tags: [smartmeter, p1]
 ---
 
-> Disclaimer: This is all based on the Dutch P1 Standard, in other countries it will not work or your experiences may vary
+Disclaimer: This is all based on the Dutch P1 Standard, in other countries it will simply not work or at best your experiences may vary
 
 ![Smartmeter](/images/smartmeter.png){: .align-right}
 
@@ -69,7 +69,7 @@ Try to do a `cat /dev/ttyUSBO` and you would see something similar to this scrol
 !D3B0
 ```
 
-*This is what is called a P1 Telegram and contains all the data collected by your smartmeter. in Part 2 of this blog series I will go into this format and see how we can parse this using Elixir
+This is what is called a P1 Telegram and contains all the data collected by your smartmeter. in Part 2 of this blog series I will go into this format and see how we can parse this using Elixir
 
 Now what you can do is install [Domoticz](http://www.domoticz.com/) and configure it to read the P1 connection through the ttyUSB0 device.
 

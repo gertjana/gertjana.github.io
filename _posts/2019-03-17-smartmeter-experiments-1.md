@@ -69,10 +69,12 @@ Try to do a `cat /dev/ttyUSBO` and you would see something similar to this scrol
 !D3B0
 ```
 
-This is what is called a P1 Telegram and contains all the data collected by your smartmeter. in Part 2 of this blog series I will go into this format and see how we can parse this using Elixir
+This is what is called a P1 Telegram and contains all the data collected by your smartmeter.
 
 Now what you can do is install [Domoticz](http://www.domoticz.com/) and configure it to read the P1 connection through the ttyUSB0 device.
 
 ![Domoticz](/images/Domoticz.png)
 
 If all you want is get insights in your energy usage this is all you need.
+
+In Part 2 of this blog series I will go into this format and see how we can parse this using Elixir

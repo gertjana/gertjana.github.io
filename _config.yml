@@ -3,8 +3,8 @@ title: Gertjan Assies Dev
 description: 'Ramblings of a chaotic mind'
 url: 'https://blog.gertjanassies.dev'
 baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+google_analytics: 'UA-136450675-1'
+disqus_shortname: 'gertjanassies'
 
 author:
   name: 'Gertjan Assies'
@@ -22,7 +22,7 @@ defaults:
 
 # Build settings
 destination: _site
-paginate: 10
+paginate: 6
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge

@@ -5,6 +5,7 @@ url: 'https://blog.gertjanassies.dev'
 baseurl: ''
 google_analytics: 'UA-136450675-1'
 disqus_shortname: 'gertjan-assies-dev'
+show_drafts: true
 
 author:
   name: 'Gertjan Assies'

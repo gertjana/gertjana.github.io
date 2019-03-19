@@ -16,7 +16,9 @@ So it should be very easy to connect this to say .. a raspberry pi and indeed it
 
 ![P1-USB](/images/p1_usb.png){: .align-left}
 
-P1 to USB cables are readily available for under 20 euro's. don't try to make them yourself, the P1 has 5V levels, the R-Pi 3.3V.  which could blow up a chip on the R-Pi.
+P1 to USB cables are readily available for under 20 euro's. don't try to make them yourself, the P1 has 5V levels, the R-Pi 3.3V.  which could blow up a chip on the R-Pi, together with a recent raspberry pi, sd card and power adapter, total costs should be about 70 euro.
+
+
 
 I installed [Raspbian Stretch Lite](https://www.raspberrypi.org/downloads/raspbian/) and burned that to an SD Card, I used a 4Gb one which is plenty.
 
@@ -41,7 +43,7 @@ When you look in the `/dev` folder you should see a `ttyUSB0` device.
 
 Try to do a `cat /dev/ttyUSBO` and you would see something similar to this scroll in your console every x seconds (the Spec says 10 seconds, my meter at home does it every second)
 
-``` bash
+``` text
 /XMX5LGBBFG10
  
 1-3:0.2.8(42)

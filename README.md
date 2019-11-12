@@ -1,2 +1,2 @@
 # gertjana.github.io
-Personal blog
+Personal blog @ https://blog.gertjanassies.dev/

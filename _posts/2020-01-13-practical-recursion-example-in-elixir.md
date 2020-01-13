@@ -46,7 +46,7 @@ $$\frac{v_{x} \ -v_{n}}{t_{x} \ -t_{n}}\frac{v_{1} -v_{0}}{t_{1} -t_{0}} \ +\ \f
 
  * We start with an empty accumulator, no previous value and the list of km's cycled
  * when we don't have a previous value, we call ourselves with the head of the list as the previous value and the tail as the list
- * when we have a previous value we calculate the average km/days, add it to the accumulator and call ourselves again with the head as the previous value and the tail 
+ * when we have a previous value we calculate the average km/days between the previous and the head of the list, add it to the accumulator and call ourselves again with the head as the previous value and the tail 
  * when we call it with and empty list we return the accumulator (exit condition)
 
 A big thing in recursion is tail recursive or tail-call optimization.

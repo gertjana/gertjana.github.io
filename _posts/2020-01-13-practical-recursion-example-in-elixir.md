@@ -27,7 +27,7 @@ or .. the average of all the previous points (0 to n) is equal to the average of
 so what we need is a recursive function that does this part:
 
 {% raw %}
-$$\frac{v_{x} \ -v_{n}}{t_{x} \ -t_{n}}\frac{v_{1} -v_{0}}{t_{1} -t_{0}} \ +\ \frac{v_{2} \ -v_{1}}{t_{2} \ -t_{1}} \ ...\frac{v_{n} \ -\ v_{n-1}}{t_{n} -t_{n-1}}$$
+$$\frac{v_{1} -v_{0}}{t_{1} -t_{0}} \ +\ \frac{v_{2} \ -v_{1}}{t_{2} \ -t_{1}} \ ...\frac{v_{n} \ -\ v_{n-1}}{t_{n} -t_{n-1}}$$
 {% endraw %}
 
 ```elixir
@@ -53,7 +53,7 @@ A big thing in recursion is tail recursive or tail-call optimization.
 
 Normally when you call function B from function A the current state of function A will be put on the stack end retreived again when Function B returns, except when the call to function B is the last thing function A does. then it only has to return the result of function B
 
-When calling a recursive function with a large list, this could cause the stack to grow beyond it's memory and crash your application, solving this is calling 'Tail call optimization' and just means we need to make sure the recursive call is the last statement in the function.
+When calling a recursive function with a large list, this could cause the stack to grow beyond it's memory allowance and crash your application, solving this is calling 'Tail call optimization' and just means we need to make sure the recursive call is the last statement in the function.
 
 We can see from the code that we call ourselves from 2 places, so how can we optimize this loop to be tail call optimized?
 

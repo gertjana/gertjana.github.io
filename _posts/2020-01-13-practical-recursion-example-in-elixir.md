@@ -44,9 +44,10 @@ $$\frac{v_{x} \ -v_{n}}{t_{x} \ -t_{n}}\frac{v_{1} -v_{0}}{t_{1} -t_{0}} \ +\ \f
   end
 ```
 
- * when we call it with and empty list we return the accumalator (exit condition)
+ * We start with an empty accumulator, no previous value and the list of km's cycled
  * when we don't have a previous value, we call ourselves with the head of the list as the previous value and the tail as the list
- * when we have a previous value we calculate the average km/days, add it to the accumalator and call ourselves again with the head as the previous value and the tail 
+ * when we have a previous value we calculate the average km/days, add it to the accumulator and call ourselves again with the head as the previous value and the tail 
+ * when we call it with and empty list we return the accumulator (exit condition)
 
 A big thing in recursion is tail recursive or tail-call optimization.
 
@@ -60,7 +61,6 @@ As the only thing this function does is pattern match on a list and Elixir also 
 
 ```elixir
   deltas = loop([], nil, measurements)
-
 
   defp loop(acc, _, []), do: acc
   defp loop(acc, nil, [head | tail]), do: loop(acc, head, tail)

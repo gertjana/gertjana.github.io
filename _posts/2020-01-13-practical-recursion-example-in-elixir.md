@@ -12,7 +12,7 @@ As the new year starts, a lot of people are starting their "new years resolution
 
 I have an electric bike that keeps track of the total km's cycled, in 2018 I cycled ~5000 km, in 2019 ~3000 km, so a downward trend was showing. (The electric car I got in 2019 might have something to do with that)
 
-One of my (modest) goals for 2020 was to cycle at least 4000km which is around 80 km a week (my daily commute is around 35km), so if I cycle to work at 2 to 3 times a week, I will make it easily.
+One of my (modest) goals for 2020 is to cycle at least 4000km which is around 80 km a week (my daily commute is around 35km), so if I cycle to work at 2 to 3 times a week, I will make it easily.
 
 Now to help keep track, I wrote a small command line tool, that allows my to enter the current kilometers, and predict using linear trend analysis where it would end up at the end of the year.
 

@@ -90,7 +90,7 @@ So I didn't cycle that much in the first two weeks, let's blame that on the weat
 
 BTW: I used the excelent [ex_cli](https://hex.pm/packages/ex_cli) library for creating a commandline app, with argument parsing
 
-The total application sourcecode can be found here: (github.com/gertjana/van_moofings)(https://github.com/gertjana/van_moofings)
+The total application sourcecode can be found here: [github.com/gertjana/van_moofings](https://github.com/gertjana/van_moofings)
 
 
 

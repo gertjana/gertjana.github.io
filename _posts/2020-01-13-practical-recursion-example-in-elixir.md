@@ -30,6 +30,12 @@ so what we need is a recursive function that does this part:
 $$\frac{v_{1} -v_{0}}{t_{1} -t_{0}} \ +\ \frac{v_{2} \ -v_{1}}{t_{2} \ -t_{1}} \ ...\frac{v_{n} \ -\ v_{n-1}}{t_{n} -t_{n-1}}$$
 {% endraw %}
 
+I store it as a json datastructure, so a simple map with dates and km values
+```elixir
+%{"2020-01-01" => 8091, "2020-01-10" => 8119, "2020-01-13" => 8166, "2020-01-16" => 8197}
+```
+Which gets translated as a list of structs as sorting on the date is needed
+
 ```elixir
   deltas = loop([], nil, measurements)
 
@@ -76,10 +82,15 @@ Then all its left is calculating the average of the deltas and multiply it with 
 
 ```fish
 ~>./van_moofing trend 2020
-With a average of 6.72 km a day and 353 days left in the year,
-you will have cycled 2372.0 km in 2020
+With a average of 9.704 km a day with 350 days left in the year,
+you will have cycled 3396.0 km in 2020
 ```
 
 So I didn't cycle that much in the first two weeks, let's blame that on the weather ;)
 
 BTW: I used the excelent [ex_cli](https://hex.pm/packages/ex_cli) library for creating a commandline app, with argument parsing
+
+The total application sourcecode can be found here: (github.com/gertjana/van_moofings)(https://github.com/gertjana/van_moofings)
+
+
+

@@ -11,9 +11,9 @@ Im just a guy who (in random order) likes to
 * listen to music, 
 * print stuff in 3D
 * loves to cook gourmet meals
-* program in Scala, Elixir, Go and others 
+* program functional in Scala, Elixir, Go and others 
 * experiment with Arduino’s and Raspberry Pi’s
 * automate his home
 * play games 
 
-and when he doesn’t have time for those things, he sleeps or works as an Devops Teamlead / Lead Scala Developer for a company that excels in durable mobility concepts.
+and when he doesn’t have time for those things, he sleeps or works as an Site Reliability Software Engineer for a company that excels in durable mobility concepts.
